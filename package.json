@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Bridge-ML/meli/issues"
   },
-  "homepage": "https://github.com/Bridge-ML/meli#readme"
+  "homepage": "https://github.com/Bridge-ML/meli#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
