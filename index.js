@@ -6,9 +6,9 @@ app.get('/', function (req, res) {
     console.log('entro por raiz');
 })
 
-app.get('/notifications', function (req, res) {
+app.post('/notifications', function (req, res) {
     res.send('Notifications endpoint')
-    console.log('entro por notifications');
+    console.log(res.body);
 })
 
 app.get('/posts', async (req, res) => {
