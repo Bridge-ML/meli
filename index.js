@@ -7,7 +7,7 @@ app.get('/', function (req, res) {
 })
 
 app.post('/notifications', function (req, res) {
-    res.send('Notifications endpoint')
+    res.send(res.body)
     console.log(res.body);
 })
 
