@@ -13,7 +13,7 @@ app.get('/notifications', function (req, res) {
 
 app.get('/posts', async (req, res) => {
     try {
-      const meliObject = new MeliObject(res.locals.access_token);    
+      const meliObject = new MeliObject("APP_USR-7000097314032908-090812-35f332ae81a93f675826a2f3b77de960-819557918");    
       const user = await meliObject.get('/users/me');
       const items = (await meliObject.get(`/users/${user.id}/items/search`)).results || [];
       if (items.length) {
