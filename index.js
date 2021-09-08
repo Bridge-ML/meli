@@ -8,7 +8,8 @@ app.get('/', function (req, res) {
 
 app.post('/notifications', function (req, res) {
   const {body} = req
-  res.status(200).json({'message':'OK','data':body})
+  console.log(body)
+  res.status(200).json({'message':'OK','data':{body}})
 })
 
 app.get('/posts', async (req, res) => {
